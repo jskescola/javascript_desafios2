@@ -1,1 +1,1 @@
-# javascript_desafios2
+# Repositório do trabalho do aluno Eduardo Romeu.
