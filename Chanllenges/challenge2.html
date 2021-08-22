@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cadastrar-se</title>
+        <script src="../JS/index.js"></script>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="challenge.css">
+    </head>
+    
+    <body>
+            <header>
+                <div class="container">
+                    <a href="index.html"><img src="https://eduardoromeu.github.io/plymouthwebsite/img/logo.png" class="logo-head"></a>
+        
+                    <ul class="links-head">
+                        <li><a href="https://eduardoromeu.github.io/plymouthwebsite/index.html">Home</a></li>
+                        <li><a href="challenge.html">Calcular Aluguel</a></li>
+                        <li><a href="https://eduardoromeu.github.io/plymouthwebsite/contato.html">Contato</a></li>
+                    </ul>
+                    
+                    <div class="search"> <!-- &#x1f50e -->
+                        <label for="searchinput"><img src="https://eduardoromeu.github.io/plymouthwebsite/img/magnifier.png"></label>
+                        <input type="search" id="searchinput" placeholder="Pesquisar">
+                    </div>
+                </div>
+            </header>
+        
+            <main>
+                <h1 class="title-rent">Cadastrar-se</h1>
+                <form id="rentForm" class="form-rent">
+                    <fieldset class="fieldset-rent">
+                        <label for="nameInput" class="label-rent">Nome Completo</label>
+                        <input type="text" id="nameInput" class="input-rent" required>
+                    </fieldset>
+                    <fieldset class="fieldset-rent">
+                        <label for="rgInput" class="label-rent">RG (somente números)</label>
+                        <input type="number" id="rgInput" class="input-rent" required>
+                    </fieldset>
+                    <fieldset class="fieldset-rent">
+                        <label for="cpfInput" class="label-rent">CPF (somente números)</label>
+                        <input type="number" id="cpfInput" class="input-rent" required>
+                    </fieldset>
+                    <fieldset class="fieldset-rent">
+                        <label for="motherInput" class="label-rent">Nome Da Mãe</label>
+                        <input type="text" id="motherInput" class="input-rent" required>
+                    </fieldset>
+                    <fieldset class="fieldset-rent">
+                        <label for="dadInput" class="label-rent">Nome Do Pai</label>
+                        <input type="text" id="dadInput" class="input-rent" required>
+                    </fieldset>
+                    <fieldset class="fieldset-rent">
+                        <label for="emailInput" class="label-rent">Email</label>
+                        <input type="email" id="emailInput" class="input-rent" required>
+                    </fieldset>
+                    <fieldset class="fieldset-rent">
+                        <label for="cnhInput" class="label-rent">
+                            <input type="checkbox" id="cnhInput" required>
+                            Declaro que possuo carteira de motorista
+                        </label>
+                    </fieldset>
+        
+                    <button type="button" onclick="Send()" class="btn-rent">Enviar</button>
+                </form>
+    
+                <div id="signupRes" class="form-rent hidden flex">
+                    <table class="confirm-table">
+                        <tr>
+                            <th style="border-right: none;">Confirmar Dados</th>
+                            <th style="border-left: none;"></th>
+                        </tr>
+                        <tr>
+                            <td>Nome</td>
+                            <td class="confirmCell"></td>
+                        </tr>
+                        <tr>
+                            <td>RG</td>
+                            <td class="confirmCell"></td>
+                        </tr>
+                        <tr>
+                            <td>CPF</td>
+                            <td class="confirmCell"></td>
+                        </tr>
+                        <tr>
+                            <td>Nome Da Mãe</td>
+                            <td class="confirmCell"></td>
+                        </tr>
+                        <tr>
+                            <td>Nome Do Pai</td>
+                            <td class="confirmCell"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="confirmCell"></td>
+                        </tr>
+                    </table>
+                    <button class="btn-rent" onclick="Confirm()">Confirmar</button>
+                </div>
+            </main>
+        
+            <footer>
+                <div class="container">
+                    <div class="copy-logos"> 
+                        <a href="index.html"><img src="https://eduardoromeu.github.io/plymouthwebsite/img/logo96.png" class="logo-foot"></a>
+                        <a href="https://www.stellantis.com/en"><img src="https://eduardoromeu.github.io/plymouthwebsite/img/FCA.webp" class="logo-foot"></a>
+                        <a href="https://www.chrysler.com"><img src="https://eduardoromeu.github.io/plymouthwebsite/img/CC.webp" class="logo-foot"></a>
+                    </div>
+        
+                    <p class="copyright-foot"> ©1970 FCA US LLC. All Rights Reserved. </p>
+        
+                    <ul class="links-foot">
+                        <li><a href="https://www.chrysler.com/">Chrysler</a></li>
+                        <li><a href="https://www.dodge.com/">Dodge</a></li>
+                        <li><a href="https://www.jeep.com/">Jeep</a></li>
+                        <li><a href="https://www.ramtrucks.com/">Ram</a></li>
+                        <li><a href="https://www.fiatusa.com/">Fiat</a></li>
+                        <li><a href="https://www.alfaromeousa.com/">Alfa Romeo</a></li>
+                    </ul>
+                </div>
+            </footer>
+        <script src="signup.js"></script>
+    </body>
+</html>

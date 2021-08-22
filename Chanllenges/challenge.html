@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calcular Preço</title>
+        <script src="../JS/index.js"></script>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="challenge.css">
+    </head>
+    
+    <body>
+            <header>
+                <div class="container">
+                    <a href="index.html"><img src="https://eduardoromeu.github.io/plymouthwebsite/img/logo.png" class="logo-head"></a>
+        
+                    <ul class="links-head">
+                        <li><a href="https://eduardoromeu.github.io/plymouthwebsite/index.html">Home</a></li>
+                        <li><a href="challenge.html">Calcular Aluguel</a></li>
+                        <li><a href="https://eduardoromeu.github.io/plymouthwebsite/contato.html">Contato</a></li>
+                    </ul>
+                    
+                    <div class="search"> <!-- &#x1f50e -->
+                        <label for="searchinput"><img src="https://eduardoromeu.github.io/plymouthwebsite/img/magnifier.png"></label>
+                        <input type="search" id="searchinput" placeholder="Pesquisar">
+                    </div>
+                </div>
+            </header>
+        
+            <main>
+                <h1 class="title-rent">Calcular preço a pagar pelo carro alugado</h1>
+                <form id="rentForm" class="form-rent">
+                    <fieldset class="fieldset-rent">
+                        <label for="kmInput" class="label-rent">Quilômetros Rodado:</label>
+                        <input type="number" id="kmInput" class="input-rent" >
+                    </fieldset>
+                    <fieldset class="fieldset-rent">
+                        <label for="daysInput" class="label-rent">Dias Alugado</label>
+                        <input type="number" id="daysInput" class="input-rent" >
+                    </fieldset>
+        
+                    <button type="button" onclick="CalcRent()" class="btn-rent">Calcular</button>
+                    
+                    <fieldset class="hidden fieldset-rent" id="nex-rent">
+                        <p id="rentResP" class="label-rent">O preço a pagar será de: R$</p>
+                        <hr>
+                        <label class="label-rent">Cadastre-se e ganhe descontos na próxima vez que alugar um carro!</label>
+                        <button class="btn-rent" type="button" onclick="ChangePage('challenge2.html')">Cadastrar-se</button>
+                    </fieldset>
+                </form>
+            </main>
+        
+            <footer class="footer-fixed">
+                <div class="container">
+                    <div class="copy-logos"> 
+                        <a href="index.html"><img src="https://eduardoromeu.github.io/plymouthwebsite/img/logo96.png" class="logo-foot"></a>
+                        <a href="https://www.stellantis.com/en"><img src="https://eduardoromeu.github.io/plymouthwebsite/img/FCA.webp" class="logo-foot"></a>
+                        <a href="https://www.chrysler.com"><img src="https://eduardoromeu.github.io/plymouthwebsite/img/CC.webp" class="logo-foot"></a>
+                    </div>
+        
+                    <p class="copyright-foot"> ©1970 FCA US LLC. All Rights Reserved. </p>
+        
+                    <ul class="links-foot">
+                        <li><a href="https://www.chrysler.com/">Chrysler</a></li>
+                        <li><a href="https://www.dodge.com/">Dodge</a></li>
+                        <li><a href="https://www.jeep.com/">Jeep</a></li>
+                        <li><a href="https://www.ramtrucks.com/">Ram</a></li>
+                        <li><a href="https://www.fiatusa.com/">Fiat</a></li>
+                        <li><a href="https://www.alfaromeousa.com/">Alfa Romeo</a></li>
+                    </ul>
+                </div>
+            </footer>
+        <script src="rental.js"></script>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+:root {
+    --wbody: #00000099;
+    --wtitle: #000000cc;
+    --wshadow: 2px 5px 10px #0000004d;
+    --inputcol: #FFFFFF50;
+  }
+  
+  html {
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  a {
+    color: lightskyblue;
+  }
+
+  p, label, input, button{
+    margin: .2em;
+    -webkit-appearance: none;
+  }
+
+  input {
+    padding: .5em;
+    outline: none;
+    border: none;
+    background-color: var(--inputcol);
+    border-radius: 100em;
+    color: white;
+    text-align: center;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  button {
+    padding: .4em .8em;
+    background-color: var(--inputcol);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .window {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5em;
+    box-shadow: var(--wshadow);
+    transition: 0.5s all;
+  }
+  
+  .title-bar {
+    width: 100%;
+    padding: .5em 0;
+    text-align: center;
+    font-size: 0.8em;
+    background-color: var(--wtitle);
+
+  }
+  
+  .window-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--wbody);
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .hidden {
+    display: none;
+    opacity: 0%;
+  }
