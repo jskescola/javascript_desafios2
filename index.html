@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Java Script-->
+    <script type="text/javascript" src="js/content.js"></script>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--Roboto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="parteprin">
+        <header class="headerPrin">
+        
+            <nav class="navHeader">
+                <ul class="containerNavHeader">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">COMO PARTICIPAR</a></li>
+                    <li><a href="#">RANKING</a></li>
+                    <li><a href="#">CADASTRO</a></li>
+                </ul>
+            </nav>
+    
+            <div class="cadastro">
+                <input type="button" class="botoesCadastro" value="SING UP">
+                <input type="button" class="botoesCadastro" value="LOG IN">
+            </div>
+        </header>
+    
+        <section class="apresentacao">
+                
+            <div class="apresentacaoTextos">
+                <h1>Bem vindo</h1>
+                <p>Espero que se divirta aqui</p>
+            </div>
+        </section>
+    </section>
+
+    <!--CONTEÚDO PRINCIPAL-->
+
+    <main>
+
+        <section class="jogos">
+            <div class="jogosTitulo">
+                <h1>Que comecem os jogos</h1>
+            </div>
+
+            <div class="jogosApresentacao">
+                <div class="jogoSorte">
+                    <h1>Jogo da sorte</h1>
+                    <p>Digite o válor máximo e mínimo do sorteio e o número que você acredita que vai ser sorteado, e aperte o botão</p>
+                    <div class="jogoSorteContainer">
+                        <div class="sorteioInput">
+                            <input type="number" placeholder="Digite o valor máximo" id="máximo">
+                            <input type="number" placeholder="Digite o valor mínimo" id="mínimo">
+                            <input type="number" placeholder="Aposta" id="numeroUsuario">
+                        </div>
+                        <input type="text" readonly id="res"></input><br>
+                        <input type="button" value="Verificar" class="botaoSorteio" onclick="sorteio()">
+                    </div>
+                </div>
+    
+                <div class="contadorCliques">
+                    <h1>Contador de Cliques</h1>
+                    <p>Apenas inicie o temporizador e clique o mais rapido que conseguir no botão abaixo e veja o quão rápido você é.</p>
+                    <div id="timer"></div>
+                    <button type="button" id="cliquesApresen">
+                        Clique Aqui <output id="clique" class="cliques"> 0 </output>
+                    </button><br>
+                    <div class="botoesContador">
+                        <input type="button" onclick="iniciarTimer()" value="Iniciar Temporizador">
+                        <input type="button" id="refresh" value="Zerar Temporizador">
+                    </div>
+                        
+                    </div>
+            </div>
+        </section>
+    </main>
+
+<!--Java Script-->
+    <script type="text/javascript" src="js/contador_e_temporizador.js"></script>
+</body>
+</html>

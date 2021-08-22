@@ -1,0 +1,228 @@
+/*Header*/
+.parteprin{
+    background-image: url(https://digitalks.com.br/expo-2017/wp-content/uploads/sites/5/2015/03/fundo-site-expo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+}
+*{
+    /*background-image: url(http://www.amantesdocarnavalsp.com.br/wp-content/uploads/2016/06/fundo-site-5.jpg);*/
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.headerPrin{
+    height: 100px;
+    width: 100%;
+    background-color: white;/*000e44*/
+    border-bottom: 2px solid white;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 50%;
+}
+.logoHeader img{
+    width: 140px;
+    height: 85px;
+}
+.headerPrin{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.containerNavHeader{
+    display: flex;
+    
+}
+.containerNavHeader li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    margin-right: 40px;
+    
+}
+.containerNavHeader li a:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+/*botões*/
+.botoesCadastro{
+    background-color: transparent;
+    color: black;
+    padding: 7px;
+    border: 3px solid black;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.botoesCadastro:hover{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border: 3px solid black;
+    border-radius: 100px;
+    transition-duration: 0.4s;
+}
+
+/*main*/
+
+.apresentacao img{
+    width: 30%;
+   height: 300px;
+   margin: 0 auto;
+   display: flex;
+   align-self: center;
+}
+
+/*textos*/
+
+.apresentacao{
+    width: 40%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+.apresentacao h1{
+    padding-top: 30%;
+    font-size: 30px;
+}
+.apresentacao p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/*jogos*/
+.jogos{
+    padding: 20px;
+    
+}
+.jogosApresentacao{
+    display: flex;
+    justify-content: space-between;
+}
+.jogosTitulo h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+}
+
+/*Sorteio*/
+
+.jogoSorte{
+    width: 45%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid rgb(156, 153, 153);
+}
+.jogoSorteContainer{
+    display: flex;
+    flex-direction: column;
+}
+.jogoSorte h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+.jogoSorte p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+.sorteioInput{
+    display: flex;
+}
+.sorteioInput input{
+    margin-top: 10px;
+    height: 30px;
+    width: 30%;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(19, 18, 18);
+    font-size: 10pt;
+    padding: 7px;
+}
+#res{
+    height: 300px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 30pt;
+    text-align: center;
+}
+.botaoSorteio{
+    width: 200px;
+    padding: 20px;
+    align-self: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 15pt;
+    color: black;
+    background-color: white;
+}
+.botaoSorteio:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.errou{
+    color: red;
+}
+.acertou{
+    color: green;
+}
+/*Contador de cliques*/
+.contadorCliques{
+    width: 45%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid rgb(156, 153, 153);
+}
+.contadorCliques h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+.contadorCliques p{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+}
+#timer{
+    height: 30vh;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 35pt;
+    text-align: center;
+    padding-top: 15%;
+}
+#cliquesApresen{
+    height: 30vh;
+    width: 100%;
+    font-size: 20pt;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.contadorCliques input{
+    height: 50px;
+    width: 40%;
+    font-size: 15pt;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+.contadorCliques input:hover{
+    color: white;
+    background-color: black;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.botoesContador{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
